@@ -10,6 +10,7 @@ Pod::Spec.new do |s|
 
 	s.description = 'Fake example data lib. Forked from github user bananita.' \
 
-	s.source_files = 'MBFaker/*'
+	s.source_files = 'MBFaker/**/*.{h,m}'
 	s.requires_arc = false
+	s.dependency 'YAML-Framework'
 end
