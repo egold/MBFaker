@@ -7,10 +7,11 @@ Pod::Spec.new do |s|
 	s.homepage = 'https://github.com/egold/MBFaker'
 	s.author   = { 'bananita' => 'foo@bar.com' }
 	s.source   = { :git => 'https://github.com/egold/MBFaker.git', :tag => s.version.to_s }
+	s.resources = 'MBFaker/**/*.yml'
 
 	s.description = 'Fake example data lib. Forked from github user bananita.' \
 
-	s.source_files = 'MBFaker/**/*.{h,m,yml}'
+	s.source_files = 'MBFaker/**/*.{h,m}'
 	s.requires_arc = false
 	s.dependency 'YAML-Framework'
 end
